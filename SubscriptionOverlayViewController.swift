@@ -19,8 +19,9 @@ class SubscriptionOverlayViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        var viewToPresent = NEventModeModule.getOnboardingView()
-        subscriptionOverlayModule = SubscriptionOverlayModule(viewToPresent: viewToPresent)
+        var viewForPresenting = NEventModeModule.getOnboardingView()
+        viewForPresenting.backgroundColor = .clear
+        subscriptionOverlayModule = SubscriptionOverlayModule(viewToPresent: viewForPresenting)
         supportFormView = subscriptionOverlayModule.view
 
         supportFormView.translatesAutoresizingMaskIntoConstraints = false
