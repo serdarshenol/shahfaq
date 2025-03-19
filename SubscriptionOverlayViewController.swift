@@ -18,6 +18,7 @@ class SubscriptionOverlayViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("Hello world!, i have new changes which is not in local, yet")
 
         var viewForPresenting = NEventModeModule.getOnboardingView()
         viewForPresenting.backgroundColor = .clear
