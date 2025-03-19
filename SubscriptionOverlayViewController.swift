@@ -18,6 +18,7 @@ class SubscriptionOverlayViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("Hello world!")
 
         var viewForPresenting = NEventModeModule.getOnboardingView()
         viewForPresenting.backgroundColor = .clear
